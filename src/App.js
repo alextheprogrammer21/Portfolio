@@ -12,6 +12,9 @@ const projects = [
   {id: 2, name: 'Re:Mind', url: 'https://alextheprogrammer21.github.io/Re-Mind/', sourceCode: 'https://github.com/alextheprogrammer21/Re-Mind', description: 'A wellness app for habit tracking.', img: "https://raw.githubusercontent.com/alextheprogrammer21/Re-Mind/master/images/1.PNG"}
 
 ]
+
+let page = 'portfolio';
+
 function App() {
 
   const listOfProjects = projects.map((project) => {
@@ -26,9 +29,16 @@ function App() {
     );
   });
 
+  function handlePageChange(pageChange) {
+    page = pageChange;
+    console.log("Now display the new pages")
+  }
+
   return (
     <div className="App">
-            <Navigation></Navigation>
+            <Navigation
+            onClick={handlePageChange}
+            ></Navigation>
       <header className="App-header">
         <p className='cards'>
           { listOfProjects }

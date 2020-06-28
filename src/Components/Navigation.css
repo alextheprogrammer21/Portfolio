@@ -15,7 +15,7 @@ nav {
     /* font-family: "Pacifico", cursive; */
   }
   
-  username {
-    color: white;
-    font-weight: bold;
+
+  .links:hover {
+    color: blue;
   }
