@@ -8,7 +8,9 @@ import Card from './Components/Card'
 import './App.css';
 
 const projects = [
-  {id: 1, name: 'Devware', url: 'https://alextheprogrammer21.github.io/Devware/', sourceCode: 'https://github.com/alextheprogrammer21/Devware', description: 'People make software to sell to you. People make freeware to give away to you. There is also a vast sea of open source projects hidden to the average user that developers make for various reasons. I call these devwares. Devware allows users to search for and download devware applications for free.', img: "https://raw.githubusercontent.com/alextheprogrammer21/Re-Mind/master/images/1.PNG"}
+  {id: 1, name: 'Devware', url: 'https://alextheprogrammer21.github.io/Devware/', sourceCode: 'https://github.com/alextheprogrammer21/Devware', description: 'People make software to sell to you. People make freeware to give away to you. There is also a vast sea of open source projects hidden to the average user that developers make for various reasons. I call these devwares. Devware allows users to search for and download devware applications for free.', img: "https://raw.githubusercontent.com/alextheprogrammer21/Devware/master/src/images/1.PNG"},
+  {id: 2, name: 'Re:Mind', url: 'https://alextheprogrammer21.github.io/Re-Mind/', sourceCode: 'https://github.com/alextheprogrammer21/Re-Mind', description: 'A wellness app for habit tracking.', img: "https://raw.githubusercontent.com/alextheprogrammer21/Re-Mind/master/images/1.PNG"}
+
 ]
 function App() {
 
