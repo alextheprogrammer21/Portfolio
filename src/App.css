@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.cards {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+footer {
+  margin-left: 30vw;
+  
+}

@@ -1,25 +1,30 @@
+//Created By Alex Setia
+//June 27, 2020
+//My Personal Portfolio
+
 import React from 'react';
-import logo from './logo.svg';
+import Navigation from './Components/Navigation';
+import Card from './Components/Card'
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
+            <Navigation></Navigation>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p className='cards'>
+          <Card></Card> <Card></Card>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <footer>
+  <p>Made by Abhi Setia </p>
+  <p>Contact: <a href="mailto:abhisetia0@gmail.com.com">abhisetia0@gmail.com</a></p>
+</footer>
+
     </div>
+    
   );
 }
 
