@@ -63,7 +63,7 @@ function App() {
         </p>
       </header>
       <footer>
-  <p>Made by Abhi Setia </p>
+  <p>© 2020. Made by Abhi Setia</p>
   <p>Contact: <a href="mailto:abhisetia0@gmail.com.com">abhisetia0@gmail.com</a></p>
 </footer>
     </div>

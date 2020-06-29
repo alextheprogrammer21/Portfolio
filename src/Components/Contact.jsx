@@ -4,6 +4,7 @@ import "./Contact.css";
 
 export default function About() {
     return (
-        <p> Contact me at abhisetia0@gmail.com </p>
+        <p>For all inquiries: <a href="mailto:abhisetia0@gmail.com.com">abhisetia0@gmail.com</a></p>
+
     )
 }
