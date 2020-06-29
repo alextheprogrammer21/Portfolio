@@ -64,7 +64,7 @@ function App() {
       </header>
       <footer>
   <p>© 2020. Made by Abhi Setia</p>
-  <p>Contact: <a href="mailto:abhisetia0@gmail.com.com">abhisetia0@gmail.com</a></p>
+  <p>Contact: <a href="mailto:abhisetia0@gmail.com">abhisetia0@gmail.com</a></p>
 </footer>
     </div>
   );
