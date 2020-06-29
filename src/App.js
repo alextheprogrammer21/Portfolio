@@ -13,9 +13,12 @@ const projects = [
 
 ]
 
-let page = 'portfolio';
-
 function App() {
+
+  let [page, setPage] = React.useState('portfolio');
+  let [portfolioBool, setPortfolioBool] = React.useState(true);
+  let [aboutBool, setAboutBool] = React.useState(false);
+  let [contactBool, setContactBool] = React.useState(false);
 
   const listOfProjects = projects.map((project) => {
     return (
@@ -29,9 +32,31 @@ function App() {
     );
   });
 
+  const aboutInfo = function() {
+    return (
+      <p> Test </p>
+    )
+  }
+
+  const contactInfo = function() {
+    return (
+      <p> Contact me at: abhisetia0@gmail.com </p>
+    )
+  }
   function handlePageChange(pageChange) {
-    page = pageChange;
-    console.log("Now display the new pages")
+
+    setAboutBool(false)
+    setContactBool(false)
+    setPortfolioBool(false)
+
+    if (pageChange === 'portfolio') {
+      setPortfolioBool(true)
+    } else if (pageChange === 'about') {
+      setAboutBool(true)
+    } else if (pageChange === 'contact') {
+      setContactBool(true)
+    }
+    setPage(pageChange);
   }
 
   return (
@@ -41,7 +66,9 @@ function App() {
             ></Navigation>
       <header className="App-header">
         <p className='cards'>
-          { listOfProjects }
+        {portfolioBool ? listOfProjects : <div> </div>}
+        {aboutBool ? aboutInfo : <div> </div>}
+        {contactBool ? contactInfo : <div> </div>}
         </p>
       </header>
       <footer>
