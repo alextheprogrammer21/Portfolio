@@ -5,6 +5,8 @@
 import React from 'react';
 import Navigation from './Components/Navigation';
 import Card from './Components/Card'
+import About from './Components/About';
+import Contact from './Components/Contact';
 import './App.css';
 
 const projects = [
@@ -32,17 +34,6 @@ function App() {
     );
   });
 
-  const aboutInfo = function() {
-    return (
-      <p> Test </p>
-    )
-  }
-
-  const contactInfo = function() {
-    return (
-      <p> Contact me at: abhisetia0@gmail.com </p>
-    )
-  }
   function handlePageChange(pageChange) {
 
     setAboutBool(false)
@@ -67,8 +58,8 @@ function App() {
       <header className="App-header">
         <p className='cards'>
         {portfolioBool ? listOfProjects : <div> </div>}
-        {aboutBool ? aboutInfo : <div> </div>}
-        {contactBool ? contactInfo : <div> </div>}
+        {aboutBool ? <About></About> : <div> </div>}
+        {contactBool ? <Contact></Contact> : <div> </div>}
         </p>
       </header>
       <footer>
