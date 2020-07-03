@@ -6,7 +6,7 @@ nav {
       rgba(9, 9, 121, 1) 35%,
       rgba(0, 212, 255, 1) 100%
     ); */
-    background-color: #001f3f
+    background-color: #0B3C5D
   }
   
   @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
@@ -19,8 +19,6 @@ nav {
   .links:hover {
     color: blue;
   }
-
-  .footer {
-    text-align: center;
-    margin-left: 500px;
-  }
+.footer {
+  text-align: center !important;
+}

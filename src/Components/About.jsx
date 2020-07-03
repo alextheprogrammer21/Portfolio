@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className='about'>
 
-        <img src='https://avatars3.githubusercontent.com/u/56317276?s=400&u=c560973e56f66a6a2ba9c49aa6e3cd6f904181a7&v=4' />
+        {/* <img className='uglyImage' src='https://avatars3.githubusercontent.com/u/56317276?s=400&u=c560973e56f66a6a2ba9c49aa6e3cd6f904181a7&v=4' /> */}
 
         <h1>Welcome! I'm Abhi Setia</h1>
         <br></br>
